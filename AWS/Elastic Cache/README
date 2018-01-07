@@ -1,0 +1,7 @@
+1. Create a web Interface using AWS.
+2. Find a large dataset (250K tuples or larger)
+3. Load the data into a Relational DB.
+4. Write SQL code to do 5 thousand random queries. Log the time from request to response.
+5. Repeat using queries of 5 thousand specific (limited by parameter) queries. Log the time from request to response.
+6. Repeat previous two steps using “Elastic” Cache (Memcache, Redis, etc.)
+7. Display your results on the webpage.
