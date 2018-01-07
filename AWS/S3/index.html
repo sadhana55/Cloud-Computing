@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>welcome to Amazon cloud</title>
+	<h1 align="center">My cloud</h1>
+    <!--<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">-->
+  </head>
+
+  <body>
+    <h2>Upload Files to cloud</h2>
+		<div class="container">
+		<form id="upload_form" action="/upload" method="POST" enctype="multipart/form-data">
+            BUCKET NAME:<input type="text" name="bucket" placeholder="Enter name of bucket">
+        <input type="file" name="file" accept="uploaded_files/*" multiple>
+            <input type="submit" name="upload" value="Upload Files">
+        </form>
+        <hr>
+
+        <h2>Display Files from cloud</h2>
+    <div class="container">
+    <form id="display_form" action="/displayfile" method="POST" enctype="multipart/form-data">
+    FILE NAME: <input type="text" name="file" placeholder="Enter name of file">
+    BUCKET NAME:<input type="text" name="bucket" placeholder="Enter name of bucket">
+        Number:<input type="text" name="number" >
+        <input type="submit" name="display" value="Display Files">
+    </form>
+    <hr>
+
+
+	<h3>List of files</h3>
+		<form id="list_form1" action="/list_files" method="GET">
+		<input type="submit" name="list_files" value="list">
+
+		</form>
+		<hr><h3>Copy files</h3>
+		<form id="copy_form1" action="/copy_files" method="GET">
+		<input type="submit" name="copy_files" value="Copy">
+
+		</form>
+		<hr>
+
+
+
+
+
+	<h3>DOWNLOADING FILE FROM CLOUD</h3>
+       <form id="download_form" action="/download" method="POST" enctype="multipart/form-data">
+           FILE NAME: <input type="text" name="file" placeholder="Enter name of file">
+           BUCKET NAME: <input type="text" name="bucket" placeholder="Enter name of bucket">
+           <input type="submit" name="download" value="download">
+   </form>
+	
+	<h4>DELETING FILE FROM CLOUD</h4>
+      <form id="delete_form" action="/delete" method="POST">
+           FILE NAME: <input type="text" name="file" placeholder="Enter name of file">
+           BUCKET NAME: <input type="text" name="bucket" placeholder="Enter name of bucket">
+           <input type="submit" name="delete" value="delete">
+      </form>
+
+      <form id="logout" action="/logout" method="POST">
+
+           <input type="submit" name="logout" value="logout">
+      </form>
+
+	</div>
+  </body>
+</html >
