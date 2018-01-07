@@ -1,0 +1,34 @@
+Amazon Web Services – EC2 & S3
+Configure EC2 as the webserver that host the python flask application that can store, list and delete images stored in S3. 
+Authenticate the user by using the file (contains authorized users to use the service) stored in S3. 
+After authorizing the user, user should be able to upload, download and delete the images to and from S3.
+
+
+
+Steps:
+
+1. 
+Create an AWS account at https://aws.amazon.com/ 
+2. Launch the EC2 instance after creating the account. 
+You can follow the tutorial here to create and connect to the EC2 instance http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance_linux
+Make sure you add the following rules in the inbound rules of the security group.
+3 . Install AWS Command Line interface (CLI) – http://docs.aws.amazon.com/cli/latest/userguide/installing.html
+
+You can download the root user’s access id and secret as follows:
+Click on your account 
+
+4. Select Security Credentials and then Click on to security credentials and then expand Access Keys. You can download the root account Access Key ID and Secret Access. 
+ 
+5. For security reasons it is advised to create IAM users than to use root credentials. 
+You can read more about IAM users here - http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html
+
+6. Configuring EC2 as web server:
+The following blog helps you to set up EC2 as the web server to run the python flask app.
+http://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/
+
+7. Boto 3 – Boto is AWS SDK for python, which allows developers to write software that make use of AWS services like EC2 and S3. 
+Boto interface is used to connect the S3 (Simple Storage Service) from your application to, download and list images stored in S3.
+Refer to the following upload Boto 3 Documentation - https://boto3.readthedocs.org/
+
+
+
