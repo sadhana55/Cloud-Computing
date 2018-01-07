@@ -1,0 +1,19 @@
+A number of services provide free (limited) storage, and several provide an
+easy to use, comfortable interface, such as a folder (subdirectory) on your desktop
+where you may drop file to be automatically backed up (to the cloud service and
+retrieved – or even shared between users), or web-based interface.
+Several of these services: Dropbox, Sugarsync, Skydrive, Googledrive, and iCloud
+offer free storage and most importantly – an API where you may program utilities
+to use these storage services.
+
+Here, we create a utility to provide “Storage as a Service” which will:
+Securely store and retrieve files to a cloud service provider.
+We provide following services to a user:
+Store a copy of a local file, encrypted, on your (Cloud) service.
+Retrieve (and decrypt) a remote file
+List all files on your service
+Delete a remote file
+Limit the maximum sizes of remote files to 1 MB, or less, each
+and no more than 10 MB, in total.
+
+
