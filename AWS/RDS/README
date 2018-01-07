@@ -1,0 +1,4 @@
+1. Create a web Interface using AWS.
+2. Find a large dataset (250K tuples or larger)
+3. Load the data into a Relational DB.
+4. Write SQL code for various queries
