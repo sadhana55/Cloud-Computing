@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Cloud QUIZ3</h1>
+<h2>Sadhana Singh</h2>
+<h3>1001460273</h3>
+<img src="/static/Mike.jpg" width ="140" height="140"></img>
+
+    <form id="display_form" action="/schema" method="POST" enctype="multipart/form-data">
+    FILE NAME: <input type="file" name="file" accept="uploaded_files/*" multiple>
+
+<input type="submit" value="create scema">
+</form>
+
+<form id="display_form11" action="/displaycount" method="POST" enctype="multipart/form-data">
+<input type="submit" value="count">
+    </form>
+<form id="display_form1" action="/upload" method="POST" enctype="multipart/form-data">
+<input type="submit" value="Upload">
+    </form>
+    <hr>
+
+<form id="display_form2" action="/query1" method="POST" enctype="multipart/form-data">
+    PARAMETER1: <input type="text" name="param1" >
+    VALUE:<input type="text" name="param1_value" >
+<input type="submit" value="Select Query">
+</form>
+
+<form id="display_form8" action="/select_query" method="POST" enctype="multipart/form-data">
+    COLUMN to SELECT: <input type="text" name="select_column" >
+    CLAUSE VALUE: <input type="text" name="select_value" >
+<input type="submit" value="Select Query">
+</form>
+
+<form id="display_form3" action="/query2" method="POST" enctype="multipart/form-data">
+    PARAMETER1: <input type="text" name="q2_param1" >
+    PARAMETER2: <input type="text" name="q2_param2" >
+    VALUE:<input type="text" name="q2_param1_value" >
+    VALUE: <input type="text" name="q2_param2_value" >
+<input type="submit" value="Range Query Submit">
+</form>
+
+
+
+<form id="display_form5" action="/query3_update" method="POST" enctype="multipart/form-data">
+    COLUMN to UPDATE: <input type="text" name="q3_param1" >
+    COLUMN FOR CLAUSE: <input type="text" name="q3_param2" >
+    NEW VALUE:<input type="text" name="q3_param1_value" >
+    CLAUSE VALUE: <input type="text" name="q3_param2_value" >
+<input type="submit" value="Update">
+</form>
+
+
+<form id="display_form6" action="/query4_delete" method="POST" enctype="multipart/form-data">
+
+    CLAUSE TABLE FOR DELETION: <input type="text" name="q4_param1" >
+
+    CLAUSE VALUE: <input type="text" name="q4_value" >
+<input type="submit" value="DELETE">
+</form>
+
+
+<form id="display_form4" action="/queries" method="POST" enctype="multipart/form-data">
+
+    LOWER:<input type="text" name="lower" >
+    UPPER: <input type="text" name="upper" >
+<input type="submit" value="Queries">
+</form>
+
+
+
+
+</form>
+</body>
+</html>
