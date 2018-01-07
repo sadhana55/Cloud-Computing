@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memcache</title>
+</head>
+<body>
+<h1>Cloud QUIZ4</h1>
+<h2>Sadhana Singh</h2>
+<h3>1001460273</h3>
+
+
+
+<form id="display_form" action="/schema" method="POST" enctype="multipart/form-data">
+    FILE NAME: <input type="file" name="file" accept="uploaded_files/*" multiple>
+<input type="submit" value="create schema">
+</form>
+
+
+<form id="displaycount" action="/displaycount" method="POST" enctype="multipart/form-data">
+<input type="submit" value="displaycount">
+</form>
+<form id="display_form1" action="/upload" method="POST" enctype="multipart/form-data">
+<input type="submit" value="Upload">
+</form>
+
+
+<form name="with1" action="/with" method="post" enctype="multipart/form-data">
+	<br><br><br><input type="submit" name="withmem" value="WITH MEMCACHE"><br><br><br>
+</form>
+
+<form name="with2" action="/without" method="post" enctype="multipart/form-data">
+	<br><br><br><input type="submit" name="withoutmem" value="WITHOUT MEMCACHE"><br><br><br>
+</form>
+
+<form name="with3" action="/queryforsec" method="post" enctype="multipart/form-data">
+	<br><br><br><input type="submit" name="queryforsec" value="Query for sec"><br><br><br>
+</form>
+
+<form name="with4" action="/query1withmemcheck_str" method="post" enctype="multipart/form-data">
+	<br><br><br><input type="submit" name="choice" value="String Choice Check"><br><br><br>
+</form>
+
+<form name="with4" action="/updatedb" method="post" enctype="multipart/form-data">
+	<br><br><br><input type="submit" name="choice" value="update"><br><br><br>
+</form>
+
+<form name="with5" action="/selectdb" method="post" enctype="multipart/form-data">
+	<br><br><br><input type="submit" name="choice" value="Select"><br><br><br>
+</form>
+
+<form name="selectwithmem" action="/selectwithmem" method="post" enctype="multipart/form-data">
+	<br><br><br><input type="submit" name="choice" value="selectwithmem"><br><br><br>
+</form>
+
+
+</body>
+</html>
