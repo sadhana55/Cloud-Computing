@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of images</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <h2>{{time}}</h2>
+</head>
+<body bgcolor = "Pink">
+<tr>
+    <td>
+        {% for x in image %}
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <img src="data:;base64,{{x['image']}}" width="300" height="200" >
+
+            <div class="desc">{{x['TotalCalories']}}</div>
+            <div class="desc">{{x['id']}}</div>
+        </div>
+
+        {% endfor %}
+    </td>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

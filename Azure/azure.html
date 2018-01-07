@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <title>Sadhana Singh, 1001460273</title>
+
+</head>
+<h1>Sadhana Singh</h1>
+<h1><font size="4" color="Red">Upload Files to cloud</font></h1>
+<h2>QUIZ 8</h2>
+<body bgcolor = #00FFFF>
+
+    <form id="upload_form" action="/upload" method=POST enctype="multipart/form-data">
+        FILE NAME: <input type="file" name="selectedimage" accept="uploaded_files/*" multiple>
+        Description: <input type="text" name = "captioninput">
+    <input type="submit" value="Upload">
+    </form>
+
+    <form id="d_form" action="/download" method=POST enctype="multipart/form-data">
+            <!--FILE NAME: <input type="file" name="file" accept="uploaded_files/*" multiple>-->
+        <!--<input type="text" name="caption">-->
+        <input type="submit" value="Download">
+        </form>
+
+    <form id="upload_form1" action="/top" method=POST enctype="multipart/form-data">
+        <!--FILE NAME: <input type="file" name="selectedimage" accept="uploaded_files/*" multiple>-->
+        <!--Description: <input type="text" name = "captioninput">-->
+    <input type="submit" value="top">
+    </form>
+
+</body>
+</html>

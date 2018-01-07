@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sadhana Singh, 1001460273</title>
+
+
+</head>
+<h1>Sadhana Singh</h1>
+<h1>Class:1PM</h1>
+<h1>1001460273</h1>
+<h1><font size="4" color="Red">Upload Files to cloud</font></h1>
+<h2>QUIZ 8</h2>
+
+<body>
+        <form id="upload_form" action="/upload" method=POST enctype="multipart/form-data">
+            <input type="submit" value="Upload">
+        </form>
+
+         <form id="d_form" action="/download" method=POST enctype="multipart/form-data">
+            <input type="submit" value="Download">
+        </form>
+
+    <form id="upload_form1" action="/top" method=POST enctype="multipart/form-data">
+    <input type="submit" value="TOPQUERY">
+    </form>
+
+    <form id="upload_form21" action="/newsearch" method=POST enctype="multipart/form-data">
+    Input: <input type="text" name = "userinput">
+    <input type="submit" value="Search">
+    </form>
+
+
+    <form id="upload_form3" action="/topsearch" method=POST>
+    <input type="submit" value="Top5Search">
+    </form>
+
+
+    <form id="upload_form4" action="/countquery" method=POST>
+        CONDITION FOR COUNT<input type="text" name="condition">
+        <input type="submit" value="COUNTQUERY">
+    </form>
+
+
+    <form id="upload_form10" action="/query" method=POST enctype="multipart/form-data">
+       Recipe Name <input type="text" name = "param1">
+    <input type="submit" value="QUERYSALT">
+    </form>
+
+    <form id="upload_range" action="/queryrange" method=POST enctype="multipart/form-data">
+       Calories Range1 FROM<input type="text" name = "param1">
+        Calories Range2 TO<input type="text" name = "param2">
+
+    <input type="submit" value="RANGE">
+    </form>
+
+<form id="upload_fo5" action="/delete" method=POST enctype="multipart/form-data">
+    Calories Range1 FROM<input type="text" name = "param1">
+    <input type="submit" value="DELETE">
+    </form>
+
+</body>
+</html>
